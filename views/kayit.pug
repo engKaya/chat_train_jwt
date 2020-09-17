@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div(ng-controller="kayitController")
+        .karsilamakutusu
+            p.text
+                |Kayıt
+            hr
+            form(ng-submit="kayitOl()")
+                div.formContent
+                    label.text
+                        | Kullanıcı Adı: &nbsp;
+                        input.input(ng-model="kullaniciAdi" placeholder="username")
+                        br
+                    label.text
+                        |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Şifre: &nbsp;
+                        input.input(placeholder="password" ng-model="sifre" type="password")
+                    div.buttonArea
+                        button.buttoncss(type="submit")
+                            | Kayit
+
+
+
+append stylesheets
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+append javascripts
+    script(src="/javascripts/controller/kayitController.js")
+    script(src="/javascripts/services/indexFactory.js")

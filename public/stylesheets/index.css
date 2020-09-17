@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background: #1f252d url("https://source.unsplash.com/random/1920x1080") no-repeat center fixed;
+    background-size: cover;
+}
+.text {
+    font-weight: bold;
+    color: #3c3c32;
+    justify-content: right;
+    font-family: Bahnschrift;
+    font-size: 18px;
+}
+
+.karsilamakutusu {
+    -webkit-box-shadow: 15px 15px 80px 3px rgba(61,106,219,0.71);
+    -moz-box-shadow: 15px 15px 80px 3px rgba(61,106,219,0.71);
+    box-shadow: 15px 15px 80px 3px rgba(61,106,219,0.71);
+
+    border: 1px solid;
+    border-color:#a6c1ee;
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    width:375px;
+    left: 35%;
+    top: 40%;
+    border-radius: 5px;
+    max-width: 450px;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.input {
+    padding: 3px;
+    font-size: 15px;
+    border-width: 2px;
+    color: #41434f;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px rgba(66,66,66,.46);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+formContent {
+
+    align-items: flex-end;
+    justify-content:right;
+    text-align: right;
+
+}
+
+.buttoncss {
+    border-radius: 12px;
+    border: 1px solid #00B0FF;
+    padding: 7px;
+    margin: 6px;
+    width: 85px;
+    font-size: 1.5em;
+    background-color: #00B0FF;
+    color: white;
+    font-family: 'Product Sans';
+}
+.buttoncss:hover {
+    filter: brightness(110%);
+}
+.buttoncss:focus {
+    outline: none;
+}

@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div(ng-controller="indexController")
+    .karsilamakutusu
+      p.text
+       |Hoşgeldiniz
+      hr
+      form(ng-submit="girisYap()")
+        div.formContent
+          label.text
+           | Kullanıcı Adı: &nbsp;
+           input.input(ng-model="kullaniciAdi" placeholder="username")
+           br
+          label.text
+           |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Şifre: &nbsp;
+           input.input(placeholder="password" ng-model="sifre" type="password")
+          div.buttonArea
+            button.buttoncss(type="submit")
+             | Giriş
+      button.buttoncss(ng-click="kayitEkrani()")
+       | Kaydol
+
+
+
+append stylesheets
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+append javascripts
+    script(src="/javascripts/controller/indexController.js")
+    script(src="/javascripts/services/indexFactory.js")
